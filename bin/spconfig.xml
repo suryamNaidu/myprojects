@@ -1,7 +1,16 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
 <beans>
-    <bean id = "id1" class = "com.personal.spring.learning.SampleBeanCIWithPrimiteAndString">
+	<bean id="id1" class="com.personal.spring.learning.SIPrimitiveAndString">
+		<property name="data">
+			<value>1000</value>
+		</property>
+		<property name="message">
+			<value>Hello</value>
+		</property>
+	</bean>
+    
+     <bean id = "idd" class = "com.personal.spring.learning.SampleBeanCIWithPrimiteAndString">
         <constructor-arg value="SuryamNaidu"></constructor-arg>
         <constructor-arg value="10" type="int"></constructor-arg>
 
